@@ -1,3 +1,18 @@
 *.sim/
 *.jou/
 *.log/
+
+# Vivado 생성물
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+.Xil/
+
+# 2026_0807_w_sw_uart 작업 원본의 Vivado 로그
+2026_0807_w_sw_uart/*.jou
+2026_0807_w_sw_uart/*.log
+2026_0807_w_sw_uart/*.str
+
+# SystemVerilogHDL/RV32I_MultiCycle_APB와 같은 소스의 사본
+cpu_rv32i_apb.srcs/

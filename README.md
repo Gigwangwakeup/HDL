@@ -1,7 +1,9 @@
 # AI System Semiconductor — FPGA Design & Verification
 
 Basys-3(Xilinx Artix-7) FPGA를 대상으로 한 **Verilog RTL 설계**와
-**SystemVerilog / UVM 기반 검증**, **RISC-V CPU 설계** 기록입니다. (2026.07 ~ 2026.09)
+**SystemVerilog / UVM 기반 검증**, **RISC-V CPU 설계** 기록입니다. (2026.07 ~ 2026.10)
+
+MicroBlaze와 AXI 커스텀 IP 실습은 [Verilog-HDL](https://github.com/Gigwangwakeup/Verilog-HDL) 저장소에 있습니다.
 
 | 구분 | 사용 도구 |
 |---|---|
@@ -39,6 +41,12 @@ Basys-3(Xilinx Artix-7) FPGA를 대상으로 한 **Verilog RTL 설계**와
 - **FIFO UVM** — 레퍼런스 모델 기반 scoreboard로 DUT의 리셋 시 `empty` 초기값 버그 발견·수정
 - **UART + Stopwatch** — 테스트벤치에서 `#delay`와 `@(posedge clk)`가 같은 시각에 겹쳐 생기는
   race condition을 원인 분석하고 해결
+
+## 작업 원본
+
+| 폴더 | 내용 |
+|---|---|
+| [2026_0807_w_sw_uart](2026_0807_w_sw_uart) | UART_Stopwatch_Watch를 정리하기 전의 Vivado 프로젝트 원본입니다. 정리본과 다른 버전의 `uart.v`, `uart_loop_back.v`, 테스트벤치 `tb_uart_ascii.v`가 남아 있습니다. |
 
 ## 폴더 공통 구조
 
